@@ -84,6 +84,7 @@ table, tr, td {
   border-spacing: 0;
 }
 
+/* header*/
 header {
   width: 100%;
   padding: 1rem;
@@ -122,28 +123,41 @@ header {
 }
 
 .header_nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
-  width: 70%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  width: 0%;
   height: 100vh;
-  padding: 0 1.5rem;
-  -webkit-box-shadow: 0px 0px 10px -6px rgb(78, 78, 78);
-          box-shadow: 0px 0px 10px -6px rgb(78, 78, 78);
-  color: #202020;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.221);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .desplegar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  opacity: 1;
 }
 
 .header_ul {
-  margin: 1.5rem 0;
+  position: absolute;
+  padding: 1rem 1.5rem;
+  width: 70%;
+  height: 100vh;
+  background-color: white;
 }
 
 .header_ul_li {
@@ -164,4 +178,139 @@ header {
 .header_a_flecha {
   width: 15px;
   height: 27.5px;
+}
+
+/* Devoluciones */
+.devoluciones {
+  background-color: #d5d5d5;
+  text-align: center;
+  padding: 0.8rem 2rem;
+  font-size: small;
+}
+
+.devoluciones_a {
+  font-weight: 900;
+  text-decoration: underline;
+}
+
+/* Portada */
+.portada {
+  padding: 0 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.portada_img {
+  width: 100%;
+  height: 50vh;
+}
+
+.portada_texto {
+  padding: 1rem 0;
+}
+
+.portada_texto_h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  font-family: "Anton", sans-serif;
+}
+
+.portada p {
+  margin: 0.7rem 0;
+}
+
+.portada_portada_texto_a {
+  background-color: #202020;
+  padding: 0.5rem 1.3rem;
+  color: white;
+  width: 6.5rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+/* Equipate */
+.equipate {
+  padding: 0 1.5rem;
+  overflow: auto;
+  margin-bottom: 5rem;
+}
+
+.equipate_h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.equipate_carrousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 500%;
+}
+
+.equipate_carrousel_items {
+  padding-right: 2rem;
+}
+
+.equipate_carrousel_items_texto {
+  padding: 1rem 0;
+}
+
+.equipate_carrousel_items_texto h3 {
+  font-weight: 900;
+  padding-bottom: 1rem;
+  font-size: larger;
+}
+
+.equipate_carrousel_items_texto a {
+  background-color: #202020;
+  margin: 1rem 0;
+  width: 6rem;
+  border-radius: 2rem;
+  color: white;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}
+
+/* App */
+.app {
+  padding: 0 1.5rem;
+}
+
+.app h3 {
+  padding: 1.5rem 0;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.app_img {
+  width: 100%;
+  height: 24rem;
+  padding: 1rem 0;
+}
+
+.app_galeria_a {
+  position: relative;
+}
+
+.app_galeria_posicion {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: white;
+  font-weight: 900;
+}
+
+.app_galeria_posicion p {
+  background-color: white;
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: #202020;
+  margin-top: 1rem;
 }/*# sourceMappingURL=style.css.map */
