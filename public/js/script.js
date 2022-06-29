@@ -14,7 +14,3 @@ function remove() {
 
 var title = document.querySelectorAll("#title");
 var contenido = document.querySelectorAll("#contenido");
-
-title.forEach(Element){
-  Element.addEventListener("click", )
-}
