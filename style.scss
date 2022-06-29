@@ -256,6 +256,7 @@ header{
 
 .app{
     padding: 0 1.5rem;
+    margin-bottom: 8rem;
 }
 .app h3{
     padding: 1.5rem 0;
@@ -284,4 +285,163 @@ header{
     border-radius: 2rem;
     color: $black;
     margin-top: 1rem ;
+}
+
+/* segundo carrousel */
+.red{
+    color: red;
+}
+
+/* Perder */
+
+.perder{
+    padding: 0 1.5rem;
+    margin-bottom: 8rem;
+}
+.perder_h3{
+    margin-bottom: 3rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.perder_texto{
+    margin-top: 2rem;
+    width: 70%;
+}
+.perder_texto h2{
+    font-weight: 900;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+
+.perder_texto_a{
+    background-color: $black;
+    color: white;
+    width: 6rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Unete */
+
+.unete{
+    padding: 0 1.5rem;
+    margin-bottom: 8rem;
+}
+.unete_h2{
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.unete_position{
+   position: relative;
+    
+}
+.unete_img{
+    filter: brightness(50%);
+}
+.unete_position_text{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    width: 80%;
+
+}
+.unete_position_text h3{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    color: white;
+}
+.unete_position_text_a{
+    background-color: $black;
+    width: 6rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 2rem;
+    text-align: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* nike */
+
+.nike{
+    padding: 0 1.5rem;
+    margin-bottom: 8rem;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+.nike_h2{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.nike_carrousel{
+    display: flex;
+    width: 1200px;
+    
+}
+.nike_carrousel_img{
+    width: 300px;
+    height: auto;
+    padding-right: 1rem;
+}
+
+/* categorias */
+.categorias{
+    padding: 0 1.5rem;
+    margin-bottom: 8rem;
+}
+.categorias_a{
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: 0.8rem 0;
+}
+
+/* footer */
+.footer{
+    padding: 0rem 1.5rem;
+    margin-bottom: 8rem;
+    background-color: $black;
+    color: white;
+}
+.footer_enlaces{
+    padding: 2rem 0;
+}
+.footer_enlaces_a{
+    padding: 0.6rem 0;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+.footer_hr{
+    border-top: 1px solid white;
+    
+}
+.footer_ayuda{
+    padding: 1rem 0;
+}
+.footer_ayuda_acordeon{
+    padding: 1rem 0;
+}
+.footer_ayuda_acordeon_title{
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.footer_ayuda_acordeon_contenido{
+    height: 0;
+    overflow: hidden;
+    transition: all 5s ease-in-out;
+}
+.acordeon_activo{
+    height: 100%;
+  
+    //padding: 1rem 0;
+    //font-size: 0.9rem;
+}
+.footer_ayuda_acordeon_contenido li{
+    padding: 0.5rem 0;
+
 }

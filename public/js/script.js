@@ -11,3 +11,10 @@ salida_menu.addEventListener("click", desplegar);
 function remove() {
   header_nav.classList.remove("desplegar");
 }
+
+var title = document.querySelectorAll("#title");
+var contenido = document.querySelectorAll("#contenido");
+
+title.forEach(Element){
+  Element.addEventListener("click", )
+}
