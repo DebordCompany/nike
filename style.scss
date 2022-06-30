@@ -532,26 +532,34 @@ header{
     }
 }
 .footer_ayuda_acordeon{
-    padding: 1rem 0;
+    padding:  0;
+    margin: 3rem 0;
+    height: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
     @include mobile (768px){
-        padding: 1rem 3rem;   
+        margin: 1rem 2.5rem;   
     }
 }
 .footer_ayuda_acordeon_title{
     font-weight: 900;
     font-size: 0.8rem;
 }
+.acordeon_activo{
+    height: 15rem;
+    padding: 1rem 0;
+    @include mobile (768px){
+        padding: 0;
+    }
+}
 
 .footer_ayuda_acordeon_contenido{
-    display: none;
+    
     overflow: hidden;
-    transition: all 5s ease-in-out;
-}
-.acordeon_activo{
-    display: flex;
-  
     
 }
+
 .footer_ayuda_acordeon_contenido li{
     padding: 0.5rem 0;
 
