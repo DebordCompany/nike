@@ -277,9 +277,7 @@ header{
 .equipate_carrousel_items_texto{
     padding: 1rem 0;
 }
-.equipate_carrousel_img{
-    
-}
+
 .equipate_carrousel_items_texto h3{
     font-weight: 900;
     padding-bottom: 1rem;
@@ -545,12 +543,12 @@ header{
 }
 
 .footer_ayuda_acordeon_contenido{
-    height: 0;
+    display: none;
     overflow: hidden;
     transition: all 5s ease-in-out;
 }
 .acordeon_activo{
-    height: 100%;
+    display: flex;
   
     
 }

@@ -14,3 +14,13 @@ function remove() {
 
 var title = document.querySelectorAll("#title");
 var contenido = document.querySelectorAll("#contenido");
+var ayuda = document.querySelectorAll(".footer_ayuda_acordeon");
+
+ayuda.forEach((cadaTitle, i) => {
+  ayuda[i].addEventListener("click", () => {
+    contenido.forEach((elemento) => {
+      contenido.classList.add("acordeon_activo");
+    });
+  });
+});
+console.log(contenido);

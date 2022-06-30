@@ -643,14 +643,16 @@ header {
 }
 
 .footer_ayuda_acordeon_contenido {
-  height: 0;
+  display: none;
   overflow: hidden;
   -webkit-transition: all 5s ease-in-out;
   transition: all 5s ease-in-out;
 }
 
 .acordeon_activo {
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer_ayuda_acordeon_contenido li {
