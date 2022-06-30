@@ -1,6 +1,1 @@
 node_modules
-src
-.eleventy.js
-package-lock.json
-package.json
-style.scss
